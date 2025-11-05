@@ -1,21 +1,21 @@
-import Header from './components/layout/Header';
-import Hero from './components/sections/Hero';
-import Features from './components/sections/Features';
-import Products from './components/sections/Products';
-import Testimonials from './components/sections/Testimonials';
-import Newsletter from './components/sections/Newsletter';
-import Footer from './components/layout/Footer';
+import Header from "./components/layout/Header.jsx";
+// import Hero from "./components/sections/Hero.jsx";
+// import Features from "./components/sections/Features";
+// import Products from "./components/sections/Products.jsx";
+// import Testimonials from "./components/sections/Testimonials";
+// import Navigation from "./components/layout/Navigation.jsx";
+// import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <div className="font-sans text-gray-900">
       <Header />
-      <Hero />
+      {/* <Hero />
       <Features />
       <Products />
       <Testimonials />
-      <Newsletter />
-      <Footer />
+      <Navigation />
+      <Footer /> */}
     </div>
   );
 }
