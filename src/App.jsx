@@ -1,5 +1,5 @@
 import Header from "./components/layout/Header.jsx";
-// import Hero from "./components/sections/Hero.jsx";
+import Hero from "./components/sections/Hero.jsx";
 // import Features from "./components/sections/Features";
 // import Products from "./components/sections/Products.jsx";
 // import Testimonials from "./components/sections/Testimonials";
@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="font-sans text-gray-900">
       <Header />
-      {/* <Hero />
-      <Features />
+      <Hero />
+      {/* <Features />
       <Products />
       <Testimonials />
       <Navigation />
