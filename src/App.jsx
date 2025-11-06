@@ -1,6 +1,7 @@
 import Header from "./components/layout/Header.jsx";
 import Hero from "./components/sections/Hero.jsx";
-// import Features from "./components/sections/Features";
+import Features from "./components/sections/Features";
+import Bestbrewer from "./components/sections/Bestbrewer.jsx";
 // import Products from "./components/sections/Products.jsx";
 // import Testimonials from "./components/sections/Testimonials";
 // import Navigation from "./components/layout/Navigation.jsx";
@@ -11,8 +12,9 @@ function App() {
     <div className="font-sans text-gray-900">
       <Header />
       <Hero />
-      {/* <Features />
-      <Products />
+      <Features />
+      <Bestbrewer />
+      {/* <Products />
       <Testimonials />
       <Navigation />
       <Footer /> */}
