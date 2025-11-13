@@ -6,7 +6,7 @@ import new4 from "../../assets/images/new4.jpeg";
 function Features() {
   return (
     <section className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16">
-      {/* Left Text Section */}
+      {/* Text Section */}
       <div className="md:w-1/3 text-center md:text-left space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Heyy new Brews here!!
@@ -20,7 +20,7 @@ function Features() {
         </button>
       </div>
 
-      {/* Right Image Section */}
+      {/* Image Section */}
       <div className="md:w-2/3 mt-10 md:mt-0 flex justify-center items-center gap-4">
         <img
           src={new1}

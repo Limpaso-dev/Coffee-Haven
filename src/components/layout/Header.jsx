@@ -3,11 +3,11 @@ import headerImage from "../../assets/images/headerimage.jpeg";
 function Header() {
   return (
     <header
-      className="relative bg-cover bg-center text-white shadow-lg"
+      className="relative bg-cover bg-center text-white shadow-lg h-75"
       style={{ backgroundImage: `url(${headerImage})` }}
     >
       {/* Opacity */}
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-30 h-75"></div>
 
       {/* Header content */}
       <div className="relative container mx-auto flex items-center justify-between py-20 px-8">

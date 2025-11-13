@@ -3,7 +3,7 @@ import heroImage from "../../assets/images/Herosection.jpeg";
 function Hero() {
   return (
     <section className="bg-gray-50 flex flex-col md:flex-row items-left justify-between px-6 md:px-16 py-16 md:py-24">
-      {/* Left Image Section */}
+      {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mb-1 md:mb-0">
         <img
           src={heroImage}
@@ -12,7 +12,7 @@ function Hero() {
         />
       </div>
 
-      {/* Right Text Section */}
+      {/* Text*/}
       <div className="md:w-1/2 text-center md:text-left space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
           Brewed Fresh, Served with Love
