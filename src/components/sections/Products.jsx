@@ -32,13 +32,13 @@ function Products() {
   ];
 
   return (
-    <section className="bg-[#F9F5F0] py-16 px-6 md:px-16 text-center">
+    <section className="bg-white py-16 px-6 md:px-16 text-center">
       {/* Section Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-[#4B2E05] mb-4">
         Our Signature Blends & Pastries
       </h2>
       <p className="text-gray-700 max-w-xl mx-auto mb-10">
-        Taste the art of brewing — explore our rich coffee blends and freshly
+        Taste the art of brewing, explore our rich coffee blends and freshly
         baked delights crafted for every moment.
       </p>
 
