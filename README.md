@@ -1,7 +1,6 @@
 Coffee Haven – Modern Coffee Shop Website
 
 -- Project Overview
-
 Coffee Haven is a modern coffee shop website built using React and styled with Tailwind CSS.
 The design is inspired by the furniture layout you provided, adapted creatively to match a warm, coffee-themed aesthetic.
 The site showcases the brand’s identity through hero sections, product highlights, testimonials, and custom layouts.
@@ -35,7 +34,7 @@ Creative Departures
 
 Replaced furniture themes with coffee-based content while retaining the modern aesthetic.
 
-Used real coffee shop tone—warm, cozy, and premium.
+Used real coffee shop tone-warm, cozy, and premium.
 
 Added overlays, gradients, and subtle shadows for a more professional, branded look.
 
