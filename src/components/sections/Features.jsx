@@ -6,7 +6,7 @@ import new4 from "../../assets/images/new4.jpeg";
 function Features() {
   return (
     <section className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16">
-      {/* Text Section */}
+      {/*Text*/}
       <div className="md:w-1/3 text-center md:text-left space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Heyy new Brews here!!
@@ -15,12 +15,12 @@ function Features() {
           Explore our latest coffee creations, from rich espresso blends to
           smooth cold brews, freshly roasted for true coffee lovers.
         </p>
-        <button className="bg-[#00B894] hover:bg-[#019875] transition px-8 py-3 rounded-full text-white font-semibold">
-          Check Them Out
+        <button className="bg- text-[black] hover:bg-[019875] transition px-8 py-3 rounded-full text-white font-semibold underline">
+          <a href="check Them Out"></a>Check Them Out 
         </button>
       </div>
 
-      {/* Image Section */}
+      {/*Image*/}
       <div className="md:w-2/3 mt-10 md:mt-0 flex justify-center items-center gap-4">
         <img
           src={new1}

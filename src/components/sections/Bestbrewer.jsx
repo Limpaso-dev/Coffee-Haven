@@ -3,7 +3,6 @@ import bestImage from "../../assets/images/bestbrewer.jpeg";
 function Bestbrewer() {
   return (
     <section className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16">
-      {/* Text*/}
       <div className="md:w-1/2 text-center md:text-left space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
           The Best Coffee Roaster of Your Choice
@@ -14,7 +13,7 @@ function Bestbrewer() {
         </p>
       </div>
 
-      {/* Image Section */}
+      {/* Image*/}
       <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
         <img
           src={bestImage}

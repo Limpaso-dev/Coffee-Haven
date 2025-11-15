@@ -3,19 +3,19 @@ import React, { useState } from "react";
 function Testimonials() {
   const testimonials = [
     {
-      name: "Alicia M.",
+      name: "Limpaso M.",
       role: "Art Collector",
       image: "/review.jpeg",
       quote:
-        "Their curation is flawless each piece feels intentional, soulful, and timeless. Perfect for anyone looking to elevate their home or workspace with fine art.",
+        "The curated selection here has transformed my living space. Each cup tells a story and adds a unique charm.",
     },
 
     {
-      name: "Martha W.",
+      name: "Mepetu Z.",
       role: "Interior Designer",
       image: "/daniel.jpeg",
       quote:
-        "I source pieces for my premium clients here. The versatility, mood, and emotional depth are unmatched.",
+        "I loved the taste of the coffee and the ambiance of the place. Highly recommend to all coffee lovers!",
     },
   ];
 
@@ -33,7 +33,6 @@ function Testimonials() {
 
   return (
     <section className="w-full bg-neutral-50 py-20 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
-      {/* Left Content */}
       <div>
         <h2 className="text-4xl font-bold text-gray-900 mb-6">
           What People Are Saying About Us
@@ -55,7 +54,6 @@ function Testimonials() {
         {/* Quote */}
         <p className="text-gray-700 leading-relaxed max-w-lg">“{t.quote}”</p>
 
-        {/* Arrows */}
         <div className="flex gap-4 mt-6">
           <button
             onClick={prev}

@@ -9,31 +9,66 @@ import coffeebeans from "../../assets/images/coffeebeans.jpeg";
 
 function Products() {
   const items = [
-    { img: espressoo, name: "Espresso", desc: "Strong, bold, and classic." },
+    {
+      img: espressoo,
+      name: "Espresso",
+      price: "$200",
+      beforePrice: "$250",
+    },
+
     {
       img: cappuccino,
       name: "Cappuccino",
-      desc: "Perfect blend of milk & foam.",
+      price: "$400",
+      beforePrice: "$450",
     },
-    { img: latte, name: "Latte", desc: "Smooth, creamy, and delightful." },
-    { img: mocha, name: "Mocha", desc: "Chocolate meets coffee love." },
-    { img: coldbrew, name: "Cold Brew", desc: "Chilled perfection in a cup." },
+
+    {
+      img: latte,
+      name: "Latte",
+      price: "$320",
+      beforePrice: "$360",
+    },
+
+    {
+      img: mocha,
+      name: "Mocha",
+      price: "$700",
+      beforePrice: "$750",
+    },
+
+    {
+      img: coldbrew,
+      name: "Cold Brew",
+      price: "$700",
+      beforePrice: "$750",
+    },
+
     {
       img: croissant,
       name: "Butter Croissant",
-      desc: "Golden, flaky pastry goodness.",
+      price: "$500",
+      beforePrice: "$540",
     },
+
     {
       img: muffin,
       name: "Blueberry Muffin",
-      desc: "Soft and bursting with flavor.",
+      price: "$450",
+      beforePrice: "$500",
     },
-    { img: coffeebeans, name: "Premium Beans", desc: "Freshly roasted daily." },
+
+    {
+      img: coffeebeans,
+      name: "Coffee Beans",
+      price: "$100",
+      beforePrice: "$150",
+    },
   ];
 
   return (
     <section className="bg-white py-16 px-6 md:px-16 text-center">
-      {/* Section Title */}
+      {/*Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-[#4B2E05] mb-4">
         Our Signature Blends & Pastries
       </h2>
@@ -42,7 +77,7 @@ function Products() {
         baked delights crafted for every moment.
       </p>
 
-      {/* Product Cards Grid */}
+      {/*Cards Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {items.map((item, index) => (
           <div
@@ -58,6 +93,15 @@ function Products() {
               {item.name}
             </h3>
             <p className="text-gray-600 text-sm">{item.desc}</p>
+            <div className="flex items-center gap-2 mt-2">
+              <span className="text-gray-800 font-bold">{item.price}</span>
+              <span className="text-gray-400 line-through">
+                {item.beforePrice}
+              </span>
+              <span className="text-gray-300 line-through">
+                {item.oldPrice}
+              </span>
+            </div>
           </div>
         ))}
       </div>

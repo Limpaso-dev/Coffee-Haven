@@ -1,4 +1,4 @@
-import ctaBg from "../assets/Exhibit3.jpg"; // Replace with an abstract or minimal background
+import ctaBg from "../../assets/images/coffeebulb.jpg";
 
 function CTA() {
   return (
@@ -10,11 +10,10 @@ function CTA() {
 
       <div className="relative z-10 text-[#f5f5f5] max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold text-[#d4af37]">
-          Join Our Collectors' Circle
+            Join Our Art Lovers Newsletter
         </h2>
         <p className="mt-4 text-gray-300">
-          Be the first to access new exhibitions, artist talks, and limited
-          edition prints.
+            Stay updated with the latest art trends, exclusive offers, and
         </p>
 
         <div className="mt-8 flex justify-center">
