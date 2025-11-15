@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="bg-[#0c0c0c] text-[#e5e5e5]">
       <div className="max-w-6xl mx-auto px-6 lg:px-24 py-12">
-        {/* Top: Branding + Socials */}
+        {/*Socials */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-[#333] pb-10">
           <h1 className="text-2xl font-bold mb-6 md:mb-0 flex items-center gap-3 text-white">
             <img className="h-9" />

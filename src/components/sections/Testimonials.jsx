@@ -38,7 +38,7 @@ function Testimonials() {
           What People Are Saying About Us
         </h2>
 
-        {/* Client */}
+        {/* Customer*/}
         <div className="flex items-center gap-4 mb-4 transition-all">
           <img
             src={t.image}

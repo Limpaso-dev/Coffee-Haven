@@ -1,4 +1,4 @@
-// all the imports
+// all the imports 
 import Header from "./components/layout/Header.jsx";
 import Hero from "./components/sections/Hero.jsx";
 import Features from "./components/sections/Features";
