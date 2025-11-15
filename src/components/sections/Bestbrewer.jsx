@@ -12,9 +12,6 @@ function Bestbrewer() {
           At Coffee Haven, we source premium beans and roast them to perfection,
           ensuring every sip delivers unmatched flavor and freshness
         </p>
-        <button className="bg-[#00B894] hover:bg-[#019875] transition px-8 py-3 rounded-full text-white font-semibold">
-          Learn More
-        </button>
       </div>
 
       {/* Image Section */}

@@ -1,56 +1,83 @@
+import React, { useState } from "react";
+
 function Testimonials() {
+  const testimonials = [
+    {
+      name: "Alicia M.",
+      role: "Art Collector",
+      image: "/review.jpeg",
+      quote:
+        "Their curation is flawless each piece feels intentional, soulful, and timeless. Perfect for anyone looking to elevate their home or workspace with fine art.",
+    },
+
+    {
+      name: "Martha W.",
+      role: "Interior Designer",
+      image: "/daniel.jpeg",
+      quote:
+        "I source pieces for my premium clients here. The versatility, mood, and emotional depth are unmatched.",
+    },
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  const next = () => {
+    setIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prev = () => {
+    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const t = testimonials[index];
+
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-16">
-      {/* Section Title */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        What Our Customers Say
-      </h2>
+    <section className="w-full bg-neutral-50 py-20 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
+      {/* Left Content */}
+      <div>
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          What People Are Saying About Us
+        </h2>
 
-      {/* Testimonials Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        {/* Card 1 */}
-        <div className="bg-white rounded-xl shadow-md p-6 text-center">
+        {/* Client */}
+        <div className="flex items-center gap-4 mb-4 transition-all">
           <img
-            src="/src/assets/images/test1.jpeg"
-            alt="Customer 1"
-            className="w-20 h-20 mx-auto rounded-full object-cover mb-4"
+            src={t.image}
+            alt={t.name}
+            className="w-14 h-14 rounded-full object-cover"
           />
-          <h3 className="text-xl font-semibold text-gray-800">Sarah Kim</h3>
-          <p className="text-amber-500 text-lg">★★★★★</p>
-          <p className="text-gray-600 mt-2">
-            “The caramel latte is unmatched! Amazing ambiance and friendly staff.”
-          </p>
+          <div>
+            <h3 className="font-semibold text-gray-900">{t.name}</h3>
+            <p className="text-gray-500 text-sm">{t.role}</p>
+          </div>
         </div>
 
-        {/* Card 2 */}
-        <div className="bg-white rounded-xl shadow-md p-6 text-center">
-          <img
-            src="/src/assets/images/test2.jpeg"
-            alt="Customer 2"
-            className="w-20 h-20 mx-auto rounded-full object-cover mb-4"
-          />
-          <h3 className="text-xl font-semibold text-gray-800">James Muriuki</h3>
-          <p className="text-amber-500 text-lg">★★★★★</p>
-          <p className="text-gray-600 mt-2">
-            “Best cappuccino in town. Coffee Haven has become my daily spot.”
-          </p>
-        </div>
+        {/* Quote */}
+        <p className="text-gray-700 leading-relaxed max-w-lg">“{t.quote}”</p>
 
-        {/* Card 3 */}
-        <div className="bg-white rounded-xl shadow-md p-6 text-center">
-          <img
-            src="/src/assets/images/test3.jpeg"
-            alt="Customer 3"
-            className="w-20 h-20 mx-auto rounded-full object-cover mb-4"
-          />
-          <h3 className="text-xl font-semibold text-gray-800">Linda W.</h3>
-          <p className="text-amber-500 text-lg">★★★★★</p>
-          <p className="text-gray-600 mt-2">
-            “Stylish place, premium beans, perfect brews. Highly recommended!”
-          </p>
+        {/* Arrows */}
+        <div className="flex gap-4 mt-6">
+          <button
+            onClick={prev}
+            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition"
+          >
+            ←
+          </button>
+          <button
+            onClick={next}
+            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition"
+          >
+            →
+          </button>
         </div>
+      </div>
 
+      <div>
+        <img
+          src="/coffeeroom.jpeg"
+          alt="coffee room"
+          className="rounded-xl shadow-lg w-full object-cover py-75 h-80"
+        />
       </div>
     </section>
   );
