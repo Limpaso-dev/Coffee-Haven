@@ -1,7 +1,4 @@
 Coffee Haven – Modern Coffee Shop Website
-Live Demo
-
-🔗 [Deployed URL Here]
 
 -- Project Overview
 
